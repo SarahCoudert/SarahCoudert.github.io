@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(../images/header-background.jpg) no-repeat top center; url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -66,14 +66,14 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #fff;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .9);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #0cc;
 }
 header .banner-text hr {
    width: 60%;
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #0cc; }
 
 
 /* ------------------------------------------------------------------ */
@@ -242,7 +242,7 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #0cc; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -251,7 +251,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #0cc;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -325,36 +325,37 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
+.ror {
+  	width: 80%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  	width: 55%;
+.c-programing {
+  	width: 90%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  	width: 50%;
+.python {
+  	width: 70%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.css {
+.git {
   	width: 90%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
+.postgresql {
   	width: 80%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.aws {
+    width: 60%;
+    -moz-animation: html5 2s ease;
+    -webkit-animation: html5 2s ease;
 }
+
 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
@@ -681,7 +682,7 @@ call-to-action .button {
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
+   font-family: 'librebaskerville-regular', serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
@@ -774,7 +775,7 @@ call-to-action .button {
     box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
 }
 .flex-control-paging li a:hover {
-    background: #CCC;
+    background: #ccc;
     background: rgba(255, 255, 255, .7);
 }
 .flex-control-paging li a.flex-active {
