@@ -40,10 +40,6 @@ header {
    overflow: hidden;
 }
 
-header.pricing {
-   background: linear-gradient( rgb(0, 70, 70), rgb(0, 125, 125) );
-}
-
 /* vertically center banner section */
 header:before {
    content: '';
@@ -123,7 +119,6 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
-header .banner-text .pricing { font-size: 40px; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -186,8 +181,6 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #0cc; }
-
-h1.pricing { font-size: 30px; color: white; }
 
 
 /* ------------------------------------------------------------------ */

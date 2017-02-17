@@ -65,10 +65,10 @@
 /* equal to the browser height.
 ------------------------------------------------------ */
 
-   $('header').css({ 'height': $(window).height() });
+   $('header.main').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
 
-        $('header').css({ 'height': $(window).height() });
+        $('header.main').css({ 'height': $(window).height() });
         $('body').css({ 'width': $(window).width() })
    });
 
@@ -79,7 +79,7 @@
 
    $(window).on('scroll', function() {
 
-		var h = $('header').height();
+		var h = $('header.main').height();
 		var y = $(window).scrollTop();
       var nav = $('#nav-wrap');
 
