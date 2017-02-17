@@ -65,6 +65,8 @@
 /* equal to the browser height.
 ------------------------------------------------------ */
 
+// test github
+
    $('header.main').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
 
