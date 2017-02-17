@@ -161,7 +161,7 @@ section#pricing header.pricing-header h2 {
 }
 
 section#pricing header.pricing-header {
-    height: auto !important;
+    height: auto;
     pointer-events: auto;
     text-align: center;
     color: #173d50;
