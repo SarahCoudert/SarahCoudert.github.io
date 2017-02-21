@@ -74,6 +74,14 @@
         $('body').css({ 'width': $(window).width() })
    });
 
+// test github
+
+   $('section#contact').css({ 'height': $(window).height() });
+   $(window).on('resize', function() {
+
+        $('section#contact').css({ 'height': $(window).height() });
+        $('body').css({ 'width': $(window).width() })
+   });
 
 /*----------------------------------------------------*/
 /*	Fade In/Out Primary Navigation
