@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="mimeApp" ng-controller="MimeController">
+<head>
+	<title>Sarah COUDERT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1250">
+	<script src="application.js"></script>
+	<link rel="stylesheet" media="all" href="application.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- 				MOTS DU MIME id="word"			-->
+	<div id="div_word" style="display: none;">
+	<div id="timer">C'est parti !</div>
+	<button class="whole_screen bg_mime cursor" onclick="change_word(1)" id="word" >
+	</button>
+		<audio src="audios/yeah.mp3" id="yeah_mime"></audio>
+		<audio src="audios/pass.mp3" id="pass_mime"></audio>
+	</div>
+
+	<!-- 				DIV DU TEMPS id="time"			-->
+	<div id="time" style="display: block;" class="whole_screen bg_mime">
+		<div class="center vertical-align">
+			<h1>Temps en secondes de votre partie : </h1><br>
+			<input id="word_input" type="text" name="word" value="120"><span class="bold">secondes</span><br>
+			<div><button onclick="displayMime();" class="wegive" id="click_time">LANCER LE JEU</button></div>
+		</div>
+	</div>
+
+	<!-- 				DIV DES RESULTATS id="results"		-->
+	<div id="results" style="display: none;" class="whole_screen">
+		<div class="center">
+			<h1 class="bold darkblue size_50">Vous avez trouvé <span id="good_words"></span>/<span id="nb_word"></span> mots : <br></h1>
+			<div id="show_results"></div>
+
+			<div id="button_results">
+			<div class="display-inline margin-right vertical-align-top"> <button class="wegive" onclick="window.location.reload()">RECOMMENCER</button></div>
+			<div class="display-inline margin-left vertical-align-top"> <button class="wegive" onclick="window.location='index.html'">CHANGER DE THEME</button></div>
+			<audio src="audios/horse.mp3" id="audio_mime"></audio>
+		</div>
+	</div>
+
+	<script src="all.js"></script>
+
+</body>
+</html>

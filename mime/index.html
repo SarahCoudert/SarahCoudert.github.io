@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="mimeApp" ng-controller="MimeController">
+<head>
+	<title>Sarah COUDERT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1250">
+	<script src="application.js"></script>
+	<script src="angular.js"></script>
+	<script src="mimeApp.js"></script>
+	<link rel="stylesheet" media="all" href="application.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="whole_screen">
+		<div id="rules_explain" onclick="ShowRules();"><span id="rules_point">?</span><span id="rules_text">REGLES</span></div>
+		<div id="popup" style="display : none;">
+			<p>Comment ca marche ?</p>
+			<p>Choisissez le temps que durera la partie, il sera sauvegarde</p>
+			<p>Cliquer gauche pour valider</p>
+			<p>Cliquer droit pour passer</p>
+			<p>A la fin de la partie vous saurez combien de mots vous aurez valides sur combien de mots depuis le debut de la partie.</p>
+			<p>Les mots verts sont valides, ceux en rouges ont ete passes. Vous pourrez recommencer sur le meme theme ou rejouer sur un nouveau.</p>
+			<div id="close_button" onclick="HideRules();"><br>Close</div>
+		</div>
+
+		<div class="category_bloc_container">
+			<div class="category_bloc" ng-repeat="(category_key, item) in affichage_category">
+				<div class="head_category">
+					<h2 ng-bind="item.name"></h2>
+					<p ng-bind="item.description"></p>
+				</div>
+				<div class="center">
+					<img class="logo_mime" ng-src="images/{{item.image}}">
+				</div>
+				<div class="mime_button">
+					<button ng-click="clickCategory(category_key)" class="wegive">JOUER</button>
+				</div>
+				<div class="center mime_number">
+					<span>
+						<span ng-bind="categoryCount(category_key)"></span>
+						mimes</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	function ShowRules() {
+		document.getElementById("popup").style.display = "block";
+		document.getElementById("rules_explain").style.display = "none";
+	}
+
+	function HideRules() {
+		document.getElementById("popup").style.display = "none";
+		document.getElementById("rules_explain").style.display = "block";
+	}
+
+	</script>
+
+</body>
+</html>
