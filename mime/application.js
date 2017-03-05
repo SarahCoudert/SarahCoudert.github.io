@@ -377,7 +377,7 @@ var mimeDB = {
   'Chaussure',
   'Bol',
   'Chapeau chinois',
-  'Triangle(instrument),
+  'Triangle(instrument)',
   ],
   celebrites: [
     'Mickael Jackson',
