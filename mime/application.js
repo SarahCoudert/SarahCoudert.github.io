@@ -156,10 +156,10 @@ function makeWordsInCategory(category) {
   tags.forEach(function(tag) {
     result = result.concat(mimeDB[tag])
   })
-  result = uniq(result)
   result = result.map(function(word) {
     return word.toUpperCase()
   })
+  result = uniq(result)
   result = shuffle(result)
   return result
 }
