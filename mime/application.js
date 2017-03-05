@@ -162,7 +162,7 @@ var mimeDB = {
     "trompettiste",
     "compositeur",
     "serveur",
-    "captcheur",
+    "catcheur",
     "rappeur",
     "cuisinier",
     "toiletteur de chien",
@@ -439,7 +439,7 @@ var mimeDB = {
     "Tao Pai Pai (assassin)",
     "Kayo",
     "Chaozu",
-    "Oolong",
+    "Oolong (cochon)",
   ],
   marques: [
     "Coca Cola",
