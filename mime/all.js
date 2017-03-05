@@ -5,7 +5,9 @@ var data = {};
 var guess_word = [];
 var good_words = 0;
 
-my_tab = wordsByCategory['animaux']
+var category = window.location.href.split('?')[1].split('=')[1]
+var my_tab = wordsByCategory[category]
+console.log('Loaded category ' + category + ' with ' + my_tab.length + ' words')
 
 word = my_tab[index];
 document.getElementById("word").innerHTML = word
