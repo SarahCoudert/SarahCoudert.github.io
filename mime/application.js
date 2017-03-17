@@ -382,10 +382,40 @@ var mimeDB = {
   celebrites: [
     'Mickael Jackson',
     'JK Rowling',
+    'Donald Trump',
+    'Bieber',
+    'Claude Francois',
+    'Louis XVI',
+    'Napoléon',
+    'Jules César',
+    'Charles de Gaulle',
+    'Albert Einstein',
+    'John Fitzgerald Kennedy',
+    'Beethoven',
+    'Che Guevara',
+    'Neil Armstrong',
+    'Jeanne d\'Arc',
+    'Mimmie Mathy',
+    'Xavier Niel',
+    'Hitlerounet',
+    'John Cena',
+    'Barack Obama',
   ],
   fiction: [
     'Harry Potter',
     'Ron Weasley',
+    'Barbie',
+    'Rambo',
+    'Dark Vador',
+    'Indiana Jones',
+    'Charlot',
+    'James Bond',
+    'Dracula',
+    'Superman',
+    'Forrest Gump',
+    'Spiderman',
+    'Hulk',
+    'Iron Man',
   ],
   geographie: [
     'Japon',
@@ -409,6 +439,8 @@ var mimeDB = {
     'Pôle Nord',
     'Pôle Sud',
     'Océan indien',
+    'Paris',
+    'Tremblement de terre',
   ],
   dbz: [
     'Tortue géniale',
@@ -441,37 +473,17 @@ var mimeDB = {
     "Chaozu",
     "Oolong (cochon)",
   ],
-  marques: [
-    "Coca Cola",
-    "Pepsi",
-    "Orangina",
-    "Adidas",
-    "Air France",
-    "Auchan",
-    "Leclerc",
-    "Ferrari",
-    "Porsche",
-    "Renault",
-    "Citroën",
-    "Peugeot",
-    "Carrefour",
-    "La Poste",
-    "Caisse d'épargne",
-    "Nintendo",
-    "Apple",
-    "Microsoft",
-  ],
 }
 
 // Syntax:
 // cateogry: [tags]
 var categories = {
-  "toutpublic" : ["animaux", "metiers", "actions", "objets", "celebrites", "fiction", "geographie", "marques"],
+  "toutpublic" : ["animaux", "metiers", "actions", "objets", "celebrites", "fiction", "geographie"],
   "animaux" : ["animaux"],
   "metiers" : ["metiers"],
   "dragonball" : ["dbz"],
   "actions" : ["actions"],
-  "culture" : ["celebrites", "fiction", "geographie", "marques"]
+  "culture" : ["celebrites", "fiction", "geographie"]
 }
 
 // Remove duplicated values from array
