@@ -466,7 +466,7 @@ var mimeDB = {
     "Kame-hame-ha",
     "Dragon radar",
     "Dragon balls",
-    "Senron (le dragon)",
+    "Shenron (le dragon)",
     "Chichi",
     "Tao Pai Pai (assassin)",
     "Kayo",
