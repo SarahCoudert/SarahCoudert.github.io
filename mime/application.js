@@ -450,7 +450,7 @@ var mimeDB = {
     "Goten",
     "Trunks",
     "Petit-coeur (Piccolo)",
-    "Puerg (chat de Yamcha)",
+    "Pu-erh (chat de Yamcha)",
     "Karin (chat de la tour)",
     "Yajirobe",
     "Pilaf",
