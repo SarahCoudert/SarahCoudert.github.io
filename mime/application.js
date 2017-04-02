@@ -104,7 +104,11 @@ var mimeDB = {
     'Diplodocus',
     'Tricératops',
     'Coccinelle',
-    'Papillon',    
+    'Papillon',
+    'Scarabée',
+    'Morpion',
+    'Cafard',
+    'Lézard',
   ],
   metiers: [
     'électricien',
