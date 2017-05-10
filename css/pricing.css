@@ -280,7 +280,7 @@ section#pricing em {
 }
 
 .pricing-features em {
-    display: inline-block;
+    display: inline;
     margin-bottom: 0;
 }
 
@@ -310,30 +310,22 @@ section#pricing em {
 }
 
 .select {
-	position: relative;
 	z-index: 1;
-	display: block;
-	height: 100%;
 	overflow: hidden;
-	text-indent: 100%;
 	white-space: nowrap;
-	color: transparent;
-}
-
-.select {
-    position: static;
-    display: inline-block;
-    height: auto;
-    padding: 1.3em 2em;
-    color: #5C258D;
-    border-radius: 8px;
-    border: 2px solid #5C258D;
-    font-size: 1.4rem;
-    text-indent: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all .6s;
-    width: 70%;
+  position: static;
+  display: inline-block;
+  height: auto;
+  padding: 1.3em 2em;
+  color: #5C258D;
+  border-radius: 8px;
+  border: 2px solid #5C258D;
+  font-size: 1.4rem;
+  text-indent: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all .6s;
+  width: 70%;
 }
 
 .no-touch .select:hover {
@@ -357,4 +349,8 @@ li hr {
 
 form span.req {
   color: black;
+}
+
+footer a.select {
+   color: #5C258D; 
 }

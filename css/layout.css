@@ -15,6 +15,7 @@
    g. Testimonials Section
    h. Contact Section
    i. Footer
+   j. Service Section
 
 ===================================================================== */
 
@@ -283,129 +284,14 @@ ul#nav li.current a { color: #0cc; }
 }
 
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skill
 /*----------------------------------------------*/
 
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
+.skills span {
+  display: block;
 }
-.bars .skills {
-  	margin-top: 36px;
-   list-style: none;
-}
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
-	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
-	text-transform: uppercase;
-   letter-spacing: 2px;
-	font-weight: normal;
-   position: relative;
-	top: -36px;
-}
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
-
-   margin: 0;
-   padding-right: 24px;
-  	background: #313131;
-   display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
-}
-
-.ror {
-  	width: 65%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.c-programing {
-  	width: 75%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.python {
-  	width: 60%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-.git {
-  	width: 70%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.postgresql {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.aws {
-    width: 50%;
-    -moz-animation: html5 2s ease;
-    -webkit-animation: html5 2s ease;
-}
-
-
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+.skills h3 {
+  text-transform: uppercase;
 }
 
 /* ------------------------------------------------------------------ */
@@ -1006,3 +892,43 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/* ------------------------------------------------------------------ */
+/* j. Services Section
+/* ------------------------------------------------------------------ */
+
+#services {
+   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/testimonials-bg.jpg) no-repeat top center;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   background-attachment: fixed;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#services a, #services a:visited  {
+  color: #0cc;
+  border-bottom: 2px solid #0cc;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+#services a:hover, #services a:focus { color: #4ff; }
+
+#services h2 {
+  font: 22px/30px 'opensans-bold', sans-serif;
+  color: white;
+  margin-bottom: 12px;
+}
+
+services p {
+  line-height: 30px;
+  color: white;
+}
+
+#services .main-col { padding-right: 5%; }
+
+#services p {
+  color: white;
+  font-size: 20px;
+}
