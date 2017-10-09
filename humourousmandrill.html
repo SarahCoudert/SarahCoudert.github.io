@@ -18,12 +18,27 @@
 <div style="margin: 0 auto;">
 <button onclick="print();">Open door</button>
 
-<p id="door" style="display:none;">The door is now open</p>
+<p class="door" id="door" style="display:none;">The door is now open</p>
+<p class="door" id="msg" style=""></p>
 </div>
 
 <script>
+
+     var showText = function (target, message, index, interval) { 
+          if (index < message.length) {
+               $(target).append(message[index++]);
+          setTimeout(function () { showText(target, message, index, interval); }, interval);
+          }
+     }
+
+     var makeMessageAppear = function() {
+
+          showText("#msg", "But it seems you will be trapped here forever...", 0, 170);
+     }
+
 	function print(){
 		$("#door").show();
+          setTimeout(makeMessageAppear,1000)
 	}
 </script>
 </body>
