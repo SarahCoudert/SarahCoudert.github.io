@@ -19,12 +19,30 @@
 <button onclick="print();">Escape</button>
 
 <p id="door" style="display:none;">The door is now open</p>
+<p class="door" id="msg" style=""></p>
+<p class="door" id="msg2" style=""></p>
 </div>
 
 <script>
-	function print(){
-		$("#door").show();
-	}
+
+     var showText = function (target, message, index, interval) { 
+          if (index < message.length) {
+               $(target).append(message[index++]);
+          setTimeout(function () { showText(target, message, index, interval); }, interval);
+          }
+          else
+               setTimeout(function(){ showText("#msg2", "Wasn't it? ", 0, 50), 1000 })
+     }
+
+     var makeMessageAppear = function() {
+
+          showText("#msg", "You hear screams in your microphone... But... it was the right thing to do...", 0, 150);
+     }
+
+     function print(){
+          $("#door").show();
+          setTimeout(makeMessageAppear,1000)
+     }
 </script>
 </body>
 </html>
