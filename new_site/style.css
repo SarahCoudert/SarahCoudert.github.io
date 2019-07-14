@@ -376,13 +376,15 @@ span.strong {
   padding: 0 5px;
 }
 
+#section-3D {
+  margin-bottom: 10px;
+}
 
 .threejs {
   height: 100vh;
   width: 100vw;
   max-width: 100vw;
   text-align: center;
-  background-color: pink;
 }
 
 /**************************/
