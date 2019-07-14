@@ -13,7 +13,7 @@ $( document ).ready(function() {
               var anchor = $(this.hash);
               anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
               if ( anchor.length ) {
-                  $("html, body").animate( { scrollTop: anchor.offset().top - 150 }, 1100);
+                  $("html, body").animate( { scrollTop: anchor.offset().top - 70 }, 1100);
               }
           }
       });

@@ -119,23 +119,26 @@ ul li {
    margin-left: 0px;
 }
 
-#menu ul a {
+a {
    font-family: 'Roboto Mono';
-   font-size: 15px;
    letter-spacing: 0;
    font-weight: 400;
-   color: #424242;
-   text-decoration: none;
+   color: #9c27b0;
    text-shadow: 0px 0px transparent;
 }
 
-#menu ul a:hover {
+a:hover {
   text-shadow: 1.3px 1.3px #5fd09a;
   text-decoration: underline;
   -webkit-transition: color 0.3s, text-shadow 0.3s;
   transition: color 0.3s, text-shadow 0.3s;
   -moz-transition: color 0.3s, text-shadow 0.3s;
   -o-transition: color 0.3s, text-shadow 0.3s;
+}
+
+#menu ul a {
+  color: #424242;
+  font-size: 15px;
 }
 
 #menu ul a.funky {
@@ -673,4 +676,17 @@ div.button-container {
 
 .resume .resume-items .resume-item p {
     margin: 0
+}
+
+/******************/
+/**** CONTACT ****/
+/****************/
+
+.contact-list {
+
+}
+
+.contact-list .contact-item {
+  display: inline-block;
+  width: 32%;
 }
