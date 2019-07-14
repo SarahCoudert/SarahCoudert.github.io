@@ -376,6 +376,15 @@ span.strong {
   padding: 0 5px;
 }
 
+
+.threejs {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  text-align: center;
+  background-color: pink;
+}
+
 /**************************/
 /*****  ANIMATIONS   *****/
 /************************/
@@ -662,9 +671,4 @@ div.button-container {
 
 .resume .resume-items .resume-item p {
     margin: 0
-}
-
-#section-3D {
-  height: 100vh;
-  width: 100vw;
 }
