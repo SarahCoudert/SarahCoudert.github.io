@@ -26,6 +26,20 @@ body, html {
    position: relative;
 }
 
+div.background-images {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(assets/palm-tree.png);
+  opacity: 0.3;
+  z-index: -1;
+  background-position: bottom middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 div.main-container {
    margin: 0 auto;
 }
@@ -259,9 +273,11 @@ footer .social-icon a:hover {
 div.section {
   position: relative;
   margin: 60px auto;
-  max-width: 65%;
+  max-width: 75%;
+  padding: 2%;
   margin-bottom: 80px;
   z-index: 50;
+  background-color: rgba(255,255,255, 0.5);
 }
 
 div.section div.title_inner {
