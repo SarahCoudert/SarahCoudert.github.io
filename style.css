@@ -277,7 +277,7 @@ div.section {
   padding: 2%;
   margin-bottom: 80px;
   z-index: 50;
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255,255,255, 0.7);
 }
 
 div.section div.title_inner {
