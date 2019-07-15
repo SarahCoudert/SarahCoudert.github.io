@@ -159,7 +159,7 @@ main {
    position: relative;
    margin: 0 auto;
    max-width: fit-content;
-   margin-bottom: 120px;
+   margin-bottom: 150px;
    z-index: 50;
 }
 
@@ -688,4 +688,15 @@ div.button-container {
 .contact-list .contact-item {
   display: inline-block;
   width: 32%;
+  vertical-align: middle;
+}
+
+.contact-item .title-contact {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+.contact-item .title-contact i {
+  color: #9c27b0;
 }
