@@ -284,14 +284,15 @@ div.section div.title_inner {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: -1px;
-  box-shadow: inset 0 -6px 0 #5fd09a;
-  -moz-box-shadow: inset 0 -6px 0 #5fd09a;
-  -webkit-box-shadow: inset 0 -6px 0 #5fd09a;
-  -khtml-box-shadow: inset 0 -6px 0 #5fd09a;
+  box-shadow: inset 0 -6px 0 -2px #5fd09a;
+  -moz-box-shadow: inset 0 -6px 0 -2px #5fd09a;
+  -webkit-box-shadow: inset 0 -6px 0 -2px #5fd09a;
+  -khtml-box-shadow: inset 0 -6px 0 -2px #5fd09a;
   width: fit-content;
   text-align: left;
   padding: 0 5px;
   font-size: 15px;
+  width: -moz-max-content;
 }
 
 div.section .right {
@@ -387,12 +388,13 @@ span.strong {
   margin-bottom: 5px;
   margin-top: 30px;
   box-shadow: inset 0 -6px 0 rgba(156, 39, 176, 0.6);
-  -moz-box-shadow: inset 0 -6px 0 rgba156, 39, 176, 0.6);
+  -moz-box-shadow: inset 0 -6px 0 rgba(156, 39, 176, 0.6);
   -webkit-box-shadow: inset 0 -6px 0 rgba(156, 39, 176, 0.6);
-  -khtml-box-shadow: inset 0 -6px 0 rgba156, 39, 176, 0.6);
+  -khtml-box-shadow: inset 0 -6px 0 rgba(156, 39, 176, 0.6);
   width: fit-content;
   text-align: left;
   padding: 0 5px;
+  width: -moz-max-content;
 }
 
 #section-3D {
@@ -436,8 +438,6 @@ span.strong {
 
 
 /* to reveal the slideMenu, the container move to left */
-#main-site.open {
-}
 
 /* display none when slide menu is closed */
 .slideCloser {
@@ -715,4 +715,130 @@ div.button-container {
 }
 .contact-item .title-contact i {
   color: #9c27b0;
+}
+
+/************/
+/** PRINT **/
+/**********/
+
+@media print {
+  *:not(h1) {
+    font-size: 0.9rem !important;
+  }
+  body, html {
+    padding: 0;
+    margin: 0;
+  }
+  h1.main-title {
+    margin-top: 0px;
+    color: rgb(156, 39, 176);
+    text-shadow: 3px 3px #2cceb0;
+    font-size: 3em;
+  }
+
+  div.started .centerize{
+    transform: inherit;
+  }
+  div.section, main, .main-container {
+    max-width: 100% !important;
+    margin-bottom: 0px !important;
+  }
+  div.section {
+    position: relative;
+    margin: 0px auto !important;
+  }
+  .no-print, .no-print * {
+      display: none !important;
+  }
+  div.started {
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  #section-cv {
+    padding-top: 10px;
+  }
+
+  .resume .resume-items .resume-item {
+    position: relative;
+    padding: 0 10px 0px;
+  }
+
+  div.section div.title_inner {
+    font-size: 1.2em;
+    letter-spacing: initial;
+    box-shadow: inset 0 -5px 0px -2px #5fd09a;
+    -moz-box-shadow: inset 0 -5px 0px -2px #5fd09a;
+    -webkit-box-shadow: inset 0 -5px 0px -2px #5fd09a;
+    -khtml-box-shadow: inset 0 -5px 0px -2px #5fd09a;
+    padding: 0 8px;
+  }
+
+  .section.skill h2.skill {
+    box-shadow: inset 0 -5px 0 -2px rgba(156, 39, 176, 0.6);
+    -moz-box-shadow: inset 0 -5px 0 -2px rgba(156, 39, 176, 0.6);
+    -webkit-box-shadow: inset 0 -5px 0 -2px rgba(156, 39, 176, 0.6);
+    -khtml-box-shadow: inset 0 -5px 0 -2px rgba(156, 39, 176, 0.6);
+    margin-top: 10px;
+  }
+
+  .resume .resume-items .resume-item .date, .resume .resume-items .resume-item .date:before, .resume .resume-items .resume-item .name{
+    padding: 0;
+    margin: 0;
+  }
+
+  .resume .resume-items .resume-item:first-child {
+      padding-top: 0
+  }
+
+  .resume .resume-items .resume-item:last-child {
+      padding-bottom: 0;
+      margin-top: -1px
+  }
+
+  .resume .resume-items .resume-item .date {
+    padding: 0 5px;
+    height: 16px;
+    line-height: 14px;
+    top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .resume .resume-items .resume-item .date:before, .resume .resume-items .resume-item:before {
+    display: none;
+  }
+
+.list-infos ul li {
+    width: 37%;
+  }
+
+  .resume .resume-items .resume-item .name {
+    margin: 15px 0 0px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .section.resume .cols .col.col-md:first-child {
+    margin-bottom: 10px;
+  }
+  
+  div.section div.title {
+    margin-bottom : 10px;
+    margin-top: 0px;
+  }
+
+  .contact-item .title-contact {
+    margin: 5px 0;
+  }
+
+  div.section .image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  ul {
+    margin-top: 0;
+    padding: 0;
+  }
 }
