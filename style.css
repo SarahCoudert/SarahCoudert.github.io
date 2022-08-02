@@ -570,6 +570,11 @@ div.button-container {
   text-align: center;
   margin-top: 50px;
 }
+div.button-container p {
+	font-size: 0.8rem;
+	opacity: 0.8;
+	margin-top: 25px;
+}
 
 /**********************/
 /****** RESUME *******/
