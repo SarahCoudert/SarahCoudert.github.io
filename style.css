@@ -722,6 +722,8 @@ div.button-container {
 /**********/
 
 @media print {
+  body {zoom: 80%;}
+  
   *:not(h1) {
     font-size: 0.9rem !important;
   }
@@ -732,8 +734,8 @@ div.button-container {
   h1.main-title {
     margin-top: 0px;
     color: rgb(156, 39, 176);
-    text-shadow: 3px 3px #2cceb0;
-    font-size: 3em;
+    text-shadow: none;
+    font-size: 2em;
   }
 
   div.started .centerize{
